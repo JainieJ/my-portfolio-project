@@ -1,11 +1,15 @@
 import React from "react";
 import Header from "./pages/header/header.component";
+import Skills from "./pages/skills/skills.component";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
-    </div>
+      <main>
+        <Skills />
+      </main>
+    </>
   );
 }
 

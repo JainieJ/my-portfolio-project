@@ -21,6 +21,8 @@ body {
 }
 
 //COLORS
+$color-primary-light: #ffb900;
+$color-primary-dark: #ff7730;
 $color-grey-dark: #777;
 $color-grey-dark-2: #999;
 $color-grey-dark-3: #333;
@@ -55,4 +57,14 @@ $default-font-size: 1.6rem;
 
 .u-margin-top-huge {
   margin-top: 10rem !important;
+}
+
+//GRID
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: 8rem;
+  }
 }

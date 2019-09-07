@@ -1,0 +1,12 @@
+@import "../../App.scss";
+
+.skills {
+  padding: 15rem 0;
+  position: relative;
+  background-image: linear-gradient(
+      rgba($color-white, 0.7),
+      rgba($color-white, 0.9)
+    ),
+    url(../../img/coding.jpg);
+  background-size: cover;
+}
