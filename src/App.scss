@@ -34,6 +34,9 @@ $color-black: #000;
 // FONT SIZES
 $default-font-size: 1.6rem;
 
+//BOX SHADOW
+$default-box-shadow: 0 3rem 6rem rgba($color-black, 0.3);
+
 //UTILITY CLASSES
 .u-center-text {
   text-align: center !important;
