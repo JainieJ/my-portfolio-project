@@ -1,13 +1,31 @@
 @import "../../App.scss";
 
-.story {
+.skill {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, 0.3);
   background-color: $color-grey-light-2;
   border-radius: 3px;
   padding: 6rem;
-  padding-left: 9rem;
   font-size: $default-font-size;
-  transform: skewX(-12deg);
+  display: flex;
+
+  &__logo-container {
+    width: 20%;
+    align-self: center;
+    text-align: center;
+    margin-right: 5%;
+  }
+
+  &__text {
+    width: 75%;
+  }
+
+  &__caption {
+    text-transform: uppercase;
+    color: $color-primary-dark;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
 }

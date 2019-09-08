@@ -1,15 +1,16 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./skills-item.styles.scss";
 
 const SkillsItem = ({ logo, text }) => {
   return (
     <div class="row">
-      <div class="story">
-        <figure class="story__shape">
-          <img src="img/nat-8.jpg" alt="lady in a boat" class="story__image" />
-          <figcaption class="story__caption">Mary Smith</figcaption>
+      <div class="skill">
+        <figure className="skill__logo-container">
+          <FontAwesomeIcon icon={["fab", `${logo}`]} size="6x" />
+          <figcaption className="skill__caption">{logo}</figcaption>
         </figure>
-        <div class="story__text">
+        <div class="skill__text">
           <p>{text}</p>
         </div>
       </div>
