@@ -1,0 +1,13 @@
+@import "../../App.scss";
+
+.contact {
+  padding: 15rem 0;
+  background-color: $color-white;
+
+  &__container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}

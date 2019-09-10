@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__language-box">
-        <BritishFlag className="header__flag" />
+        <BritishFlag className="header__flag" title="language" />
       </div>
       <div className="header__text-box">
         <h1 className="u-margin-bottom-md">

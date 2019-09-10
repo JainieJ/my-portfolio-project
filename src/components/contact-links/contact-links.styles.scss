@@ -1,0 +1,22 @@
+@import "../../App.scss";
+
+.links {
+  width: 40%;
+  background-color: orangered;
+  list-style-type: none;
+
+  &__item {
+    font-size: 1.5rem;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    & a {
+      text-decoration: none;
+      color: $color-black;
+    }
+  }
+
+  &__logo {
+    margin-right: 1rem;
+  }
+}
