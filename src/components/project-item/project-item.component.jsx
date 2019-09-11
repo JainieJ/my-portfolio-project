@@ -15,7 +15,7 @@ const ProjectItem = ({ title, description, netlify, github }) => {
           {title}
         </a>
         <p className="project__info">{description}</p>
-        <div class="u-margin-top-sm">
+        <div className="u-margin-top-sm">
           <TextButton link={github}>view code</TextButton>
         </div>
       </div>

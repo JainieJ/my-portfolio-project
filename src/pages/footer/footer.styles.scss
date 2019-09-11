@@ -1,0 +1,37 @@
+@import "../../App.scss";
+
+.footer {
+  padding: 5rem 0;
+  background-color: $color-grey-dark-3;
+  color: $color-white;
+
+  &__container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__attribution a {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &__back-button {
+    &:link,
+    &:visited {
+      color: $color-grey-light-1;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.3s;
+      font-size: 1.5rem;
+    }
+
+    &:hover,
+    &:active {
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      transform: scale(1.3);
+    }
+  }
+}

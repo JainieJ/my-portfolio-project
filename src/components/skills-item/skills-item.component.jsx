@@ -4,13 +4,13 @@ import "./skills-item.styles.scss";
 
 const SkillsItem = ({ logo, text }) => {
   return (
-    <div class="row">
-      <div class="skill">
+    <div className="row">
+      <div className="skill">
         <figure className="skill__logo-container">
           <FontAwesomeIcon icon={["fab", `${logo}`]} size="6x" />
           <figcaption className="skill__caption">{logo}</figcaption>
         </figure>
-        <div class="skill__text">
+        <div className="skill__text">
           <p>{text}</p>
         </div>
       </div>

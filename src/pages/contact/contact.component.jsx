@@ -7,7 +7,7 @@ import ContactForm from "../../components/contact-form/contact-form.component";
 const Contact = () => {
   return (
     <section className="contact">
-      <div class="u-center-text u-margin-bottom-lg">
+      <div className="u-center-text u-margin-bottom-lg">
         <HeadingSecondary>Contacts</HeadingSecondary>
       </div>
       <div className="row">

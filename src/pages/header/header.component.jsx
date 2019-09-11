@@ -5,7 +5,7 @@ import "./header.styles.scss";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header" id="header">
       <div className="header__language-box">
         <BritishFlag className="header__flag" title="language" />
       </div>

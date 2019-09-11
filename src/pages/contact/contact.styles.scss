@@ -5,9 +5,9 @@
   background-color: $color-white;
 
   &__container {
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
