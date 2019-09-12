@@ -5,7 +5,7 @@ import ProjectsList from "../../components/projects-list/projects-list.component
 
 const Projects = () => {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <div className="u-center-text u-margin-bottom-lg">
         <HeadingSecondary>My Projects</HeadingSecondary>
       </div>

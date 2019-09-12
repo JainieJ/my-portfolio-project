@@ -5,7 +5,7 @@ import SkillsList from "../../components/skills-list/skills-list.component";
 
 const Skills = () => {
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <div className="u-center-text u-margin-bottom-lg">
         <HeadingSecondary>My Skills</HeadingSecondary>
       </div>
