@@ -1,8 +1,20 @@
 const navLinks = [
-  { link: "#header", title: "home", id: 1 },
-  { link: "#skills", title: "skills", id: 2 },
-  { link: "#projects", title: "projects", id: 3 },
-  { link: "#contact", title: "contact", id: 4 }
+  {
+    link: "#header",
+    title: { english: "home", russian: "главная" },
+    id: 1
+  },
+  { link: "#skills", title: { english: "skills", russian: "навыки" }, id: 2 },
+  {
+    link: "#projects",
+    title: { english: "projects", russian: "проекты" },
+    id: 3
+  },
+  {
+    link: "#contact",
+    title: { english: "contact", russian: "контакты" },
+    id: 4
+  }
 ];
 
 export default navLinks;

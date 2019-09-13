@@ -1,11 +1,14 @@
 import React from "react";
-import "./navigation.styles.scss";
+import { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useToggle from "./../../hooks/useToggle";
+import { LanguageContext } from "../../contexts/LanguageProvider";
 import navLinks from "./../../data/navLinks";
+import "./navigation.styles.scss";
 
 const Navigation = () => {
   const [state, toggle, close] = useToggle(false);
+  const { language } = useContext(LanguageContext);
   const backgroundShown = state ? "navigation__background-shown" : null;
   const navigationShown = state ? "navigation__nav-shown" : null;
   const icon = state ? "times" : "bars";
@@ -20,7 +23,7 @@ const Navigation = () => {
           {navLinks.map(({ link, title, id }) => (
             <li class="navigation__item" key={id} onClick={close}>
               <a href={link} class="navigation__link">
-                {title}
+                {title[language]}
               </a>
             </li>
           ))}
