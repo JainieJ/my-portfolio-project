@@ -1,8 +1,8 @@
 import React from "react";
+import { useContext } from "react";
+import { LanguageContext } from "../../contexts/LanguageProvider";
 import { ReactComponent as BritishFlag } from "../../img/united-kingdom.svg";
 import { ReactComponent as RussianFlag } from "../../img/russia.svg";
-import { LanguageContext } from "../../contexts/LanguageProvider";
-import { useContext } from "react";
 
 const HeaderFlag = props => {
   const { language, setLanguage } = useContext(LanguageContext);

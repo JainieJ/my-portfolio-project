@@ -1,8 +1,8 @@
 import React from "react";
-import "./project-item.styles.scss";
 import TextButton from "../text-button/text-button.component";
+import "./project-item.styles.scss";
 
-const ProjectItem = ({ title, description, netlify, github }) => {
+const ProjectItem = ({ title, description, netlify, github, button }) => {
   return (
     <div className="row">
       <div className="project">
@@ -16,7 +16,7 @@ const ProjectItem = ({ title, description, netlify, github }) => {
         </a>
         <p className="project__info">{description}</p>
         <div className="u-margin-top-sm">
-          <TextButton link={github}>view code</TextButton>
+          <TextButton link={github}>{button}</TextButton>
         </div>
       </div>
     </div>

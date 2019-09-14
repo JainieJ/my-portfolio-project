@@ -1,33 +1,19 @@
 import React from "react";
 import "./footer.styles.scss";
+import IconAttribution from "../../components/icon-attribution/icon-attribution.component";
+import { useContext } from "react";
+import { LanguageContext } from "../../contexts/LanguageProvider";
 
 const Footer = () => {
+  const { language } = useContext(LanguageContext);
+  const linkText = language === "english" ? "go back" : "в начало";
   return (
     <footer className="footer">
       <div className="row">
         <div className="footer__container">
-          <div className="footer__attribution">
-            Icons made by&nbsp;
-            <a
-              href="https://www.flaticon.com/authors/freepik"
-              title="Freepik"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Freepik&nbsp;
-            </a>
-            from&nbsp;
-            <a
-              href="https://www.flaticon.com/"
-              title="Flaticon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.flaticon.com
-            </a>
-          </div>
+          <IconAttribution />
           <a href="#header" className="footer__back-button">
-            Go Back
+            {linkText}
           </a>
         </div>
       </div>

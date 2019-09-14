@@ -1,12 +1,15 @@
 import React from "react";
-import skills from "../../data/skills";
+import { useContext } from "react";
 import SkillsItem from "../skills-item/skills-item.component";
+import { skillsText } from "../../data/languages/skillsText";
+import { LanguageContext } from "../../contexts/LanguageProvider";
 
 const SkillsList = () => {
+  const { language } = useContext(LanguageContext);
   return (
     <>
-      {skills.map((skill, idx) => (
-        <SkillsItem key={idx} {...skill} />
+      {skillsText.map(({ logo, id, text }) => (
+        <SkillsItem key={id} logo={logo} text={text[language]} />
       ))}
     </>
   );

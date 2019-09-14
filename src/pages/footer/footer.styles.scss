@@ -10,11 +10,10 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-  }
-
-  &__attribution a {
-    text-decoration: none;
-    color: $color-white;
+    & a {
+      text-decoration: none;
+      color: $color-white;
+    }
   }
 
   &__back-button {
