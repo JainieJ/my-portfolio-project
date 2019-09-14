@@ -8,5 +8,14 @@
       rgba($color-white, 0.9)
     ),
     url(../../img/coding.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 6rem 0;
+  }
 }

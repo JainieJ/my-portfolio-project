@@ -1,0 +1,19 @@
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    max-width: 100rem;
+  }
+
+  @include respond(phone) {
+    max-width: 60rem;
+  }
+}

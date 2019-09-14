@@ -4,10 +4,27 @@
   padding: 15rem 0;
   background-color: $color-white;
 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 6rem 0;
+  }
+
   &__container {
     width: 60%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+
+    @include respond(tab-port) {
+      width: 70%;
+    }
+
+    @include respond(phone) {
+      display: block;
+      width: 80%;
+    }
   }
 }

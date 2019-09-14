@@ -8,6 +8,11 @@
   box-shadow: $default-box-shadow;
   border-radius: 3px;
 
+  @include respond(phone) {
+    width: 75%;
+    text-align: center;
+  }
+
   &__title {
     &:link,
     &:visited,

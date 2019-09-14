@@ -1,0 +1,12 @@
+@import "../../App.scss";
+
+.attribution {
+  & a {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  @include respond(phone) {
+    max-width: 20%;
+  }
+}

@@ -1,8 +1,9 @@
 import React from "react";
+import "./icon-attribution.styles.scss";
 
 const IconAttribution = () => {
   return (
-    <div>
+    <div className="attribution">
       Icons made by&nbsp;
       <a
         href="https://www.flaticon.com/authors/freepik"
