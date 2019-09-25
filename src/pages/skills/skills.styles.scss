@@ -7,9 +7,17 @@
       rgba($color-white, 0.7),
       rgba($color-white, 0.9)
     ),
-    url(../../img/coding.jpg);
+    url(../../img/coding-1200.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 600px) {
+    background-image: linear-gradient(
+        rgba($color-white, 0.7),
+        rgba($color-white, 0.9)
+      ),
+      url(../../img/coding.jpg);
+  }
 
   @include respond(tab-port) {
     padding: 8rem 0;
