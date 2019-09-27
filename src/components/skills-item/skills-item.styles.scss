@@ -31,6 +31,7 @@
 
   &__text {
     width: 75%;
+    align-self: center;
 
     @include respond(phone) {
       width: 100%;

@@ -8,7 +8,7 @@ const ContactForm = ({ language }) => {
   const { name, email, message, send } = formText[language];
   return (
     <form
-      action="https://formsubmit.co/mya@mur.com"
+      action="https://formsubmit.co/zhenya.berseneva@gmail.com"
       method="POST"
       className="form"
     >

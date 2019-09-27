@@ -17,12 +17,12 @@ const Navigation = () => {
       <button className="navigation__button" onClick={toggle}>
         <FontAwesomeIcon icon={icon} size="2x" />
       </button>
-      <div class={`navigation__background ${backgroundShown}`}>&nbsp;</div>
-      <nav class={`navigation__nav ${navigationShown}`}>
-        <ul class="navigation__list">
+      <div className={`navigation__background ${backgroundShown}`}>&nbsp;</div>
+      <nav className={`navigation__nav ${navigationShown}`}>
+        <ul className="navigation__list">
           {navLinks.map(({ link, title, id }) => (
-            <li class="navigation__item" key={id} onClick={close}>
-              <a href={link} class="navigation__link">
+            <li className="navigation__item" key={id} onClick={close}>
+              <a href={link} className="navigation__link">
                 {title[language]}
               </a>
             </li>

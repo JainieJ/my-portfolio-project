@@ -8,8 +8,13 @@ const SkillsList = () => {
   const { language } = useContext(LanguageContext);
   return (
     <>
-      {skillsText.map(({ logo, id, text }) => (
-        <SkillsItem key={id} logo={logo} text={text[language]} />
+      {skillsText.map(({ logo, id, text, description }) => (
+        <SkillsItem
+          key={id}
+          logo={logo}
+          text={text[language]}
+          description={description}
+        />
       ))}
     </>
   );

@@ -7,12 +7,12 @@ const ContactLinks = () => {
     <ul className="links">
       <li className="links__item">
         <a
-          href="mailto:myaso@mya.com?Subject=Message%20from%20portfolio"
+          href="mailto:zhenya.berseneva@gmail.com?Subject=Message%20from%20portfolio"
           rel="noopener noreferrer"
           target="_self"
         >
           <FontAwesomeIcon icon="envelope" size="lg" className="links__logo" />
-          myaso@mya.com
+          zhenya.berseneva@gmail.com
         </a>
       </li>
       <li className="links__item">
@@ -32,7 +32,7 @@ const ContactLinks = () => {
       <li className="links__item">
         <a href="tel:+123456789">
           <FontAwesomeIcon icon="phone" size="lg" className="links__logo" />
-          +123456789
+          +79057394716
         </a>
       </li>
     </ul>

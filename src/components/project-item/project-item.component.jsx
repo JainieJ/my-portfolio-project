@@ -14,7 +14,10 @@ const ProjectItem = ({ title, description, netlify, github, button }) => {
         >
           {title}
         </a>
-        <p className="project__info">{description}</p>
+        <p
+          className="project__info"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
         <div className="u-margin-top-sm">
           <TextButton link={github}>{button}</TextButton>
         </div>

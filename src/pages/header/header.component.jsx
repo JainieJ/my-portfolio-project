@@ -16,7 +16,9 @@ const Header = () => {
       </div>
       <div className="header__text-box">
         <h1 className="u-margin-bottom-md">{about}</h1>
-        <CustomButton color="white">{button}</CustomButton>
+        <CustomButton color="white" link="/cv.pdf">
+          {button}
+        </CustomButton>
       </div>
     </header>
   );
